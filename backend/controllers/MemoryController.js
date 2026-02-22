@@ -6,8 +6,8 @@ const createMemory = async(req, res) => {
 
         const src = `image/${req.file.filename}`
 
-        if(!title || description) {
-            return res.status(400).json({msg: "Por favor, preencha todos os campos."})
+        if (!title || !description) {
+            return res.status(400).json({ msg: "Por favor, preencha todos os campos." })
         }
 
         const newMemory = new Memory({
