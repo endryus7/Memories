@@ -4,26 +4,26 @@ const Schema = mongoose.Schema
 const commentSchema = new Schema({
     name: {
         type: String,
-        require: true,
+        required: true,
     },
     text: {
         type: String,
-        require: true,
+        required: true,
     }
 })
 
 const MemorySchema = new Schema({
         title: {
             type: String,
-            require: true
+            required: true
         },
         src: {
             type: String,
-            require: true
+            required: true
         },
         description: {
             type: String,
-            require: true
+            required: true
         },
         favorite: {
             type: Boolean,
