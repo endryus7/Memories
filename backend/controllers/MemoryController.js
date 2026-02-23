@@ -153,7 +153,7 @@ const addComment = async(req, res) => {
 
         await memory.save()
 
-        res.json({msg: "Comentário adicionado", memory})
+        res.json({msg: "Comentário adicionado!", memory})
         
     } catch (error) {
         res.status(500).send("Ocorreu um erro!")
