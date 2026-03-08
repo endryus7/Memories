@@ -8,7 +8,7 @@ app.use(express.static("public"))
 
 require("./db/conn")
 
-const port = 3000
+const port = process.env.PORT || 3000
 
 const memoryRoutes = require("./routes")
 
