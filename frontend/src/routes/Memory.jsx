@@ -57,7 +57,7 @@ const Memory = () => {
 
   return (
     <div className='memory-page'>
-        <img src={`${axios.defaults.baseURL}${memory.src}`} alt={memory.title} />
+        <img src={`${axios.defaults.baseURL}/${memory.src}`} alt={memory.title} />
         <h2>{memory.title}</h2>
         <p>{memory.description}</p>
         <div className="comment-form">
